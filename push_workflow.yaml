@@ -1,0 +1,19 @@
+name: Push Events Workflow
+on: push
+jobs:
+  unit-testing:
+    run-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: version of python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: install packages
+        run: pip install -r requirements.txt
+
+      - name: Run Tests
+        run: pytest test.py
