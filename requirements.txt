@@ -2,7 +2,7 @@ annotated-types==0.6.0
 anyio==4.2.0
 beautifulsoup4==4.12.2
 blinker==1.6.2
-cmdtest==0.32+git
+#cmdtest==0.32+git
 certifi==2022.9.24
 chardet==5.1.0
 #cliapp==1.20180812.1
